@@ -3,7 +3,7 @@ import pytesseract
 import time
 import pyttsx3
 import speech_recognition as sr
-from summarizer import Summarizer,TransformerSummarizer
+#from summarizer import Summarizer,TransformerSummarizer
 
 def load_model():
     print('Loading model')
@@ -83,6 +83,9 @@ def listenSpeech(model):
             continue
 
 if __name__=="__main__":
-    model = load_model()
-    listenSpeech(model)
-    # captureImage()
+    model="hello"
+    print(model)
+    #model = load_model()
+    #listenSpeech(model)
+    text = captureImage()
+    speak(text)
